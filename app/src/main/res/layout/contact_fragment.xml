@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp"
+    android:paddingTop="9dp">
+
+    <LinearLayout
+        android:id="@+id/lnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <nit.contact.views.EditTextComingSoon
+            android:id="@+id/customEditTextKeySearchContactFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_edit_text_search_contact"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="3dp"
+            android:hint="Search .."
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textSize="18dp"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:id="@+id/imvBtnDeletedKeySearchContactFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_close"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyslerViewsContactFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lnSearch"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical" />
+
+
+</RelativeLayout>

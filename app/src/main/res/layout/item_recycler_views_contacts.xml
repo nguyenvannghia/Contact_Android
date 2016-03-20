@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/rlAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/cirImageViewItemContact"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/minh_hang2"
+            app:siBorderColor="@color/green"
+            app:siBorderWidth="4dp" />
+
+        <TextView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/cirImageViewItemContact"
+            android:layout_marginLeft="-26dp"
+            android:layout_marginTop="-26dp"
+            android:layout_toRightOf="@id/cirImageViewItemContact"
+            android:background="@drawable/backrounf_offline" />
+
+    </RelativeLayout>
+
+    <com.daimajia.swipe.SwipeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@id/rlAvatar"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/bottom_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/orange_500"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/selector_button_message"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="18dp"
+                android:background="@drawable/selector_button_audio_call"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="18dp"
+                android:background="@drawable/selector_button_video_call"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="18dp"
+                android:background="@drawable/selector_button_dustbin"
+                android:clickable="true" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <nit.contact.views.TextViewComingSoon
+                android:id="@+id/tvComingSoonDisplayNameUserContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:singleLine="true"
+                android:text="Minh Hang"
+                android:textColor="@color/green"
+                android:textSize="19dp" />
+
+            <nit.contact.views.TextViewComingSoon
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvComingSoonDisplayNameUserContact"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="30dp"
+                android:maxLines="3"
+                android:text="Minh Hang Minh Hang Minh Hang Minh Hang Minh Hang Minh Hang Minh Hang Minh Hang Minh Hang Minh Hang Minh Hang Minh Hang Minh Hang Minh Hang Minh Hang Minh Hang Minh Hang"
+                android:textColor="@color/gray"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/background_num_notify_list_contact"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+
+        </RelativeLayout>
+
+
+    </com.daimajia.swipe.SwipeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray" />
+</RelativeLayout>

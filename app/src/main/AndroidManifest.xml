@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nit.contact">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".MyContactApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo_contact"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/ThemeContact">
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="contact.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="nit.contact" />
+
+
+        <activity
+            android:name=".ui.activities.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activities.FeedDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activities.ProfileActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

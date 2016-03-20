@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <nit.contact.views.CustomSwipeLayout
+        android:id="@+id/swipePicAndCommentHorFeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        swipe:leftEdgeSwipeOffset="0dp"
+        swipe:rightEdgeSwipeOffset="0dp">
+
+        <LinearLayout
+            android:id="@+id/bottomWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewCommentFragmentComment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/gray_light"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp">
+
+                <ImageView
+                    android:id="@+id/navigatorPic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:padding="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_snap_picture"
+                    tools:ignore="ContentDescription,MissingPrefix" />
+
+                <ImageView
+                    android:id="@+id/imvSendSmile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-3dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:padding="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_smile"
+                    tools:ignore="ContentDescription,MissingPrefix" />
+
+
+                <nit.contact.views.EditTextComingSoon
+                    android:id="@+id/mesagenput"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:imeOptions="actionDone"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="2dp"
+                    android:singleLine="true" />
+
+
+                <ImageView
+                    android:id="@+id/send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/white"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/icon_send"
+                    tools:ignore="ContentDescription,MissingPrefix" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+
+            <ImageView
+                android:id="@+id/imgShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:src="@drawable/minh_hang2" />
+
+            <LinearLayout
+                android:id="@+id/lnTools"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <nit.contact.views.TextViewComingSoon
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/selector_heart"
+                    android:drawablePadding="7dp"
+                    android:padding="7dp"
+                    android:textColor="@color/green"
+                    android:textSize="11sp"
+                    tools:ignore="RtlHardcoded,SmallSp"
+                    tools:text="10" />
+
+                <nit.contact.views.TextViewComingSoon
+                    android:id="@+id/tvCommentFragmentPicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/selector_comment"
+                    android:drawablePadding="7dp"
+                    android:padding="7dp"
+                    android:textColor="@color/green"
+                    android:textSize="11sp"
+                    tools:ignore="RtlHardcoded,SmallSp"
+                    tools:text="27" />
+
+                <TextView
+                    android:id="@+id/tvSaveImageToStorage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/selector_save"
+                    android:drawablePadding="7dp"
+                    android:padding="7dp"
+                    android:textColor="@color/green"
+                    android:textSize="11sp"
+                    tools:ignore="RtlHardcoded,SmallSp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </nit.contact.views.CustomSwipeLayout>
+</LinearLayout>

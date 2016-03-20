@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewFeedDetailActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="33dp" />
+
+    <nit.contact.views.HeaderLayout
+        android:id="@+id/headerLayoutFeedDetailActivity"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top"
+        android:background="@android:color/transparent" />
+
+
+    <LinearLayout
+        android:id="@+id/footerFeedDetailActivity"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:orientation="horizontal">
+
+        <nit.contact.views.EditTextComingSoon
+            android:id="@+id/edtComment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="3dp"
+            android:singleLine="false"
+            android:textSize="13dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:background="@color/white"
+            android:padding="7dp"
+            android:src="@drawable/selector_comment" />
+
+    </LinearLayout>
+</RelativeLayout>

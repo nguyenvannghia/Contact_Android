@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/buttonFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_item_button_in_dialog_bottom_first"
+        android:textAllCaps="false"
+        android:textSize="13sp"
+        android:visibility="gone"
+        tools:text="Item Button" />
+
+
+    <Button
+        android:id="@+id/buttonOnly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_item_button_in_dialog_bottom_only_one"
+        android:textAllCaps="false"
+        android:textSize="13sp"
+        android:visibility="gone"
+        tools:text="Item Button" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_item_button_in_dialog_bottom_center"
+        android:textAllCaps="false"
+        android:textSize="13sp"
+        android:visibility="gone"
+        tools:text="Item Button" />
+
+    <Button
+        android:id="@+id/buttonLast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_item_button_in_dialog_bottom_last"
+        android:textAllCaps="false"
+        android:textSize="13sp"
+        android:visibility="gone"
+        tools:text="Item Button" />
+
+</LinearLayout>

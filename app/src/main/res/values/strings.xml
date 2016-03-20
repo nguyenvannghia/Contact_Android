@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Contact</string>
+    <string name="parse_app_id">ibTWz1fksMjy8Mws5AwinqrgerUw77EONOD8uB4F</string>
+    <string name="parse_client_key">LSYpwUcGXC9EAof1QguwuEWEZQzWNZniJgScL1Wv</string>
+
+    <string name="item_menu_strip_tab_new_feeds">New Feeds</string>
+    <string name="item_menu_strip_tab_contacts">Contacts</string>
+    <string name="item_menu_notifies">Notifies</string>
+    <string name="item_menu_drawer_setting">Setting</string>
+    <string name="item_menu_drawer_profile">Profile</string>
+
+
+    <string name="login">login</string>
+    <string name="Login">Login</string>
+    <string name="Sign_up">Sing up</string>
+    <string name="empty"></string>
+    <string name="not_connect_internet">Please check connect internet!</string>
+    <string name="warning">warning</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Yes">Yes</string>
+    <string name="error_login">Error login. Please check email, password and try again!</string>
+
+    <string name="incoming_audio_call">Incoming Audio Call</string>
+    <string name="incoming_video_call">Incoming Video Call</string>
+
+
+    <string name="rejected">Rejected</string>
+    <string name="noAnswer">No answer</string>
+    <string name="hungUp">Hung up</string>
+    <string name="closed">Closed</string>
+    <string name="time_out">Time Out</string>
+    <string name="failed">Failed</string>
+    <string name="connect">Connect...</string>
+    <string name="checking">Checking...</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="hung_up_processing">Hang up call command are processing ...</string>
+    <string name="service_launched">Service for listening to calls launched</string>
+    <string name="logged_in_as">Logged In as</string>
+    <string name="WIFI_DISABLED">Call was stoped because connection was lost</string>
+
+    <string name="New_Feeds">New Feeds</string>
+    <string name="question_save_to_storage">Do you want to save to your storage</string>
+</resources>
